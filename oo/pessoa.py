@@ -1,4 +1,6 @@
 class Pessoa:
+    olhos = 2
+
     def __init__(self, *filhos, nome: str = None, idade: int = 35):
         self.nome = nome
         self.idade = idade
@@ -11,10 +13,10 @@ class Pessoa:
 if __name__ == '__main__':
     p1 = Pessoa(nome='José')
     p2 = Pessoa(p1, nome='Maria')
-    print(p1.cumprimento())
-    p2.sobrenome = 'Silva'
-    if 'sobrenome' in p2.__dict__:
-        print(p2.__dict__['sobrenome'])
-    del p2.sobrenome
-    if 'sobrenome' in p2.__dict__:
-        print(p2.__dict__['sobrenome'])
+    print(Pessoa.olhos, Pessoa.__dict__)
+    print(p1.olhos, p1.__dict__)
+    p1.olhos = 1
+    print(p1.olhos, p1.__dict__)
+    Pessoa.olhos = 3
+    print(p1.olhos, p1.__dict__)
+    print(p2.olhos, p2.__dict__)
