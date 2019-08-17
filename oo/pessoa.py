@@ -12,3 +12,9 @@ if __name__ == '__main__':
     p1 = Pessoa(nome='José')
     p2 = Pessoa(p1, nome='Maria')
     print(p1.cumprimento())
+    p2.sobrenome = 'Silva'
+    if 'sobrenome' in p2.__dict__:
+        print(p2.__dict__['sobrenome'])
+    del p2.sobrenome
+    if 'sobrenome' in p2.__dict__:
+        print(p2.__dict__['sobrenome'])
