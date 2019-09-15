@@ -5,7 +5,7 @@ import sys
 from os import path
 from unittest.case import TestCase
 
-project_dir = path.dirname(__file__)
+# project_dir = path.dirname(__file__)
 project_dir = path.join('..')
 sys.path.append(project_dir)
 from placa_grafica_tkinter import rodar_fase

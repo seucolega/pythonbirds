@@ -7,7 +7,7 @@ from unittest.case import TestCase
 import math
 import sys
 
-project_dir = path.dirname(__file__)
+# project_dir = path.dirname(__file__)
 project_dir = path.join('..')
 sys.path.append(project_dir)
 from placa_grafica_tkinter import rodar_fase

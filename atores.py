@@ -57,11 +57,11 @@ class Ator():
 
 
 class Obstaculo(Ator):
-    pass
+    _caracter_ativo = 'O'
 
 
 class Porco(Ator):
-    pass
+    _caracter_ativo = '@'
 
 
 class DuploLancamentoExcecao(Exception):
@@ -137,4 +137,5 @@ class PassaroAmarelo(Passaro):
 
 
 class PassaroVermelho(Passaro):
+    _caracter_ativo = 'V'
     pass
